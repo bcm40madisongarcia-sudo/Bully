@@ -1,0 +1,25 @@
+{
+  "name": "bully-pumpfun-bot",
+  "version": "1.0.0",
+  "description": "Autonomous trading agent for Pump.fun",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.87.0",
+    "@solana/spl-token": "^0.4.5",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "pumpfun": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  }
+}
